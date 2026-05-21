@@ -307,7 +307,7 @@ if (contactForm) {
         // ==========================================================================
         if (nextInput) {
             // Substitua pela URL final onde o seu site vai ficar hospedado online
-            const urlBase = "https://Lucas-S-dev.github.io/thanks.html";
+            const urlBase = "https://lucas-s-dev.github.io/thanks.html";
 
             // Se estiver em inglês, injeta a query string na URL de redirecionamento
             nextInput.value = isEnglish ? `${urlBase}?lang=en` : urlBase;
