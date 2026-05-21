@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado | Thank you</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajustes de layout exclusivos para a página de agradecimento */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .glass-card h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        .glass-card p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333333;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shape shape-blue"></div>
+    <div class="shape shape-purple"></div>
+
+    <div class="glass-card">
+        <h1 id="title">Obrigado!</h1>
+        <p id="text">Sua mensagem foi enviada com sucesso. Responderei em breve.</p>
+        <a href="index.html" class="hero-btn" id="btn">Voltar ao Início</a>
+    </div>
+
+    <script>
+        // Detecta se o usuário veio de uma versão em inglês pela URL
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('lang') === 'en') {
+            document.title = "Thank you | Obrigado";
+            document.getElementById('title').textContent = "Thank you!";
+            document.getElementById('text').textContent = "Your message has been sent successfully. I will reply soon.";
+            document.getElementById('btn').textContent = "Back to Home";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lucas Santos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="logo">
+            <img src="Gif_H/gif1.gif" alt="Logo Animado" class="logo-gif">
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <label for="menu-toggle" class="hamburger-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav-home">Início</a></li>
+                <li><a href="#sobre" data-i18n="nav-about">Sobre</a></li>
+                <li><a href="#tech" data-i18n="nav-tech">Tecnologias</a></li>
+                <li><a href="#projetos" data-i18n="nav-projects">Projetos</a></li>
+                <li><a href="#contato" data-i18n="nav-contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="lang-selector">
+            <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+                <span>PT-BR</span>
+            </button>
+            <ul class="lang-dropdown" id="langDropdown" role="listbox">
+                <li class="lang-option active" data-value="pt-br" role="option">PT-BR</li>
+                <li class="lang-option" data-value="pt-pt" role="option">PT-PT</li>
+                <li class="lang-option" data-value="en" role="option">EN</li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <div id="site-wrapper">
+
+            <section id="inicio">
+                <div class="shape shape-blue"></div>
+
+                <div class="glass-card">
+                    <h1 data-i18n="hero-title">Olá, eu sou Lucas Santos</h1>
+                    <p class="hero-subtitle" data-i18n="hero-subtitle">Desenvolvedor Backend & Analista de Dados</p>
+                    <p class="hero-tagline" data-i18n="hero-tagline">"Transformando dados em soluções eficientes."</p>
+
+                    <a href="assets/curriculo-lucas-pt.pdf" id="cv-btn" download class="hero-btn"
+                        data-i18n="hero-btn">Download
+                        Currículo</a>
+                </div>
+            </section>
+
+            <section id="sobre">
+                <div class="shape shape-purple"></div>
+
+                <div class="glass-card sobre-card">
+                    <div class="sobre-img-container">
+                        <img src="assets/photo_perf.jpg" alt="Foto de Lucas Santos" class="profile-pic">
+                    </div>
+
+                    <div class="sobre-content">
+                        <h2 data-i18n="about-title">Sobre Mim</h2>
+                        <p data-i18n="about-text-1">
+                            Sou um profissional focado em desenvolvimento Backend e Análise de Dados. Minha paixão é
+                            arquitetar soluções robustas e transformar grandes volumes de dados brutos em insights
+                            estratégicos que impulsionam decisões eficientes.
+                        </p>
+                        <p data-i18n="about-text-2">
+                            Com forte base em lógica e otimização de processos, busco constantemente unir a engenharia
+                            de software com a inteligência de dados para construir aplicações escaláveis, seguras e de
+                            alto impacto.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tech">
+                <div class="shape shape-green"></div>
+
+                <div class="glass-card tech-container">
+                    <h2 data-i18n="tech-title">Tecnologias</h2>
+
+                    <div class="tech-categories">
+                        <div class="tech-category-box">
+                            <h3 data-i18n="tech-cat-backend">Desenvolvimento Backend</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item-card">
+                                    <img src="assets/python.png" alt="Python" class="tech-icon-img">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-item-card">
+                                    <img src="assets/sql.png" alt="SQL / DB" class="tech-icon-img">
+                                    <span>SQL / DB</span>
+                                </div>
+                                <div class="tech-item-card">
+                                    <img src="assets/api.png" alt="API REST" class="tech-icon-img">
+                                    <span>API REST</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category-box">
+                            <h3 data-i18n="tech-cat-data">Análise de Dados</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item-card">
+                                    <img src="assets/pandas.png" alt="Pandas / BI" class="tech-icon-img">
+                                    <span data-i18n="tech-pandas">Pandas / BI</span>
+                                </div>
+                                <div class="tech-item-card">
+                                    <img src="assets/estatistica.png" alt="Estatística" class="tech-icon-img">
+                                    <span data-i18n="tech-stat">Estatística</span>
+                                </div>
+                                <div class="tech-item-card">
+                                    <img src="assets/etl.png" alt="ETL" class="tech-icon-img">
+                                    <span data-i18n="tech-etl">ETL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tech-category-box">
+                            <h3 data-i18n="tech-cat-ai">Inteligência Artificial</h3>
+                            <div class="tech-grid">
+                                <div class="tech-item-card">
+                                    <img src="assets/llm.png" alt="LLMs / OpenAI" class="tech-icon-img">
+                                    <span>LLMs / OpenAI</span>
+                                </div>
+                                <div class="tech-item-card">
+                                    <img src="assets/agents.png" alt="AI Agents" class="tech-icon-img">
+                                    <span>AI Agents</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos">
+                <div class="shape shape-orange"></div>
+
+                <div class="projects-container">
+                    <h2 data-i18n="projects-title">Projetos</h2>
+
+                    <div class="projects-grid">
+
+                        <a href="#" target="_blank" class="project-card">
+                            <h3>Loading...</h3>
+                            <p>Loading...</p>
+                        </a>
+
+                        <a href="#" target="_blank" class="project-card">
+                            <h3>Loading...</h3>
+                            <p>Loading...</p>
+                        </a>
+
+                        <a href="#" class="project-card">
+                            <h3>Loading...</h3>
+                            <p>Loading...</p>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato">
+                <div class="shape shape-cyan"></div>
+
+                <div class="contact-container">
+                    <h2 data-i18n="contact-title">Contato</h2>
+
+                    <div class="contact-wrapper">
+                        <div class="contact-info">
+                            <h3 data-i18n="contact-subtitle">Vamos conversar!</h3>
+                            <p data-i18n="contact-text">
+                                Sinta-se à vontade para entrar em contato se tiver uma proposta de projeto, oportunidade
+                                de trabalho ou apenas quiser criar uma conexão.
+                            </p>
+
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/seu-usuario" target="_blank" class="social-item">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/seu-usuario" target="_blank" class="social-item">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="mailto:lucasantos1454@gmail.com" class="social-item">
+                                    <span>E-mail</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form action="https://formsubmit.co/lucasantos1454@gmail.com" method="POST"
+                            class="contact-form">
+
+                            <input type="text" name="_honeypot" style="display:none" tabindex="-1" autocomplete="off">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_next" id="hidden-next"
+                                value="http://127.0.0.1:5500/thanks.html">
+
+                            <div class="form-group">
+                                <label for="name" data-i18n="form-name">Nome</label>
+                                <input type="text" id="name" name="name" required
+                                    data-i18n-placeholder="form-placeholder-name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-i18n="form-email">E-mail</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="form-message">Mensagem</label>
+                                <textarea id="message" name="message" required
+                                    data-i18n-placeholder="form-placeholder-message"></textarea>
+                            </div>
+
+                            <button type="submit" class="contact-btn" data-i18n="form-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
